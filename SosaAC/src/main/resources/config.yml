@@ -1,0 +1,1115 @@
+prefix: '&7[&5☯&7]'
+
+alerts:
+  format: '%prefix% &7» &f%player% &7failed &5%check% Type &7%dev%&5%type%&7%dev% %percentage%'
+  hover-message:
+    - '&fPing: &a%ping% &8| &1TPS: &a%tps% &8| &fVersion: &5%version%'
+    - ''
+    - '&5Description:'
+    - '&f%description%'
+    - ''
+    - '&5Information:'
+    - '&f%info%'
+    - ''
+    - '&5Click to teleport to &e%player%&7.'
+  click-commands:
+    - '/sf %player%'
+
+punishments:
+  message: '%prefix% &c%player% &7was automatically banned for %check% Type %type%.'
+
+messages:
+  alerts-enabled: '&aAnticheat alerts have been enabled.'
+  alerts-disabled: '&cAnticheat alerts have been disabled.'
+
+discord-webhook:
+  enabled: true
+  webhook: https://discord.com/api/webhooks/1012829755999010908/y22bEHDoOU4S-C81rJ3kKcX-ZE000ayXDctBsCvwty0r1hPPA0LJsJfNNfvIhELOcYx7
+  avatar: https://i.imgur.com/TZfPDuT.png
+  username: Sosa
+
+broadcast:
+  enabled: true
+  message: |-
+    &r              
+    &d&l♿ &d%player% &fhas been &d&lcaught lacking &fand removed from the network.
+    &r    
+
+banwave:
+  commands:
+    - 'ban %player% [AC] Judgement Day v1'
+  message: |-
+    &r
+    &r
+    &c&lSosa &ehas removed &c%player% &efrom the network.
+    &cReason: &eJudgment Day 1.0...
+    &r     
+    &r
+
+client-brand-alerts:
+  enabled: false
+  format: '%prefix% &c%player% &7joined using &e%client-brand%&7. &7(&e%client-version%&7)'
+
+violation-reset:
+  enabled: false
+  interval-in-minutes: 8
+  message-enabled: true
+  message: '%prefix% &3Sosa &fhas reset all the violations to ensure no false bans...'
+
+settings:
+  enable-alerts-on-join: true
+
+database-logs:
+  enabled: true
+  database: 'admin'
+  host: '127.0.0.1'
+  port: 27017
+  username: ""
+  password: ""
+
+
+checks:
+  combat:
+    velocity:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 30
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    autoclicker:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 30
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 20
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 20
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: true
+        max-violations: 20
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: true
+        max-violations: 25
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: true
+        max-violations: 20
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: false
+        max-violations: 20
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      h:
+        enabled: true
+        punishable: false
+        max-violations: 20
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      i:
+        enabled: true
+        punishable: false
+        max-violations: 20
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      j:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      k:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      l:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+      m:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'tempban %player% 14d &c[AC] Unfair Advantage'
+    aim:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: true
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      h:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      i:
+      enabled: true
+      punishable: true
+      max-violations: 8
+      punishment-commands:
+        - 'ban %player% perm &c[AC] Unfair Advantage'
+      j:
+        enabled: true
+        punishable: false
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      k:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      l:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      m:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      n:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      o:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      p:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      q:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      r:
+        enabled: true
+        punishable: false
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    attack:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 28
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    killaura:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: false
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      h:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      i:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      j:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      k:
+        enabled: true
+        punishable: true
+        max-violations: 20
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      l:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    criticals:
+      a:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    pattern:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      h:
+        enabled: true
+        punishable: false
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      i:
+      enabled: true
+      punishable: true
+      max-violations: 5
+      punishment-commands:
+        - 'ban %player% perm &c[AC] Unfair Advantage'
+      j:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      k:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      l:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      m:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      n:
+        enabled: true
+        punishable: true
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      o:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      p:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+  movement:
+    flight:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: false
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: false
+        max-violations: 20
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: false
+        punishable: false
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    speed:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 8
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: true
+        max-violations: 8
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      h:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      i:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      j:
+        enabled: true
+        punishable: true
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      k:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      l:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      m:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    motion:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      h:
+        enabled: true
+        punishable: false
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      i:
+      enabled: true
+      punishable: false
+      max-violations: 10
+      punishment-commands:
+        - 'ban %player% perm &c[AC] Unfair Advantage'
+      j:
+        enabled: true
+        punishable: true
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      k:
+        enabled: false
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      l:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      m:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      n:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      o:
+        enabled: false
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      p:
+        enabled: false
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      q:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      r:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      s:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      t:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      u:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      v:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      w:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      x:
+        enabled: true
+        punishable: false
+        max-violations: 6
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    nofall:
+      a:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+  player:
+    interact:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    entity:
+      a:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    pingspoof:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: false
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: false
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    blink:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: false
+        max-violations: 10
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    refill:
+      a:
+        enabled: true
+        punishable: false
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: false
+        max-violations: 25
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    timer:
+      a:
+        enabled: true
+        punishable: false
+        max-violations: 30
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 25
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 15
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+
+    invalid:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: false
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    inventory:
+      a:
+      enabled: true
+      punishable: false
+      max-violations: 2
+      punishment-commands:
+        - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: false
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: false
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+    protocol:
+      a:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      b:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      c:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      d:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      e:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      f:
+        enabled: true
+        punishable: true
+        max-violations: 7
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g:
+        enabled: true
+        punishable: false
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      g2:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      h:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      i:
+      enabled: true
+      punishable: true
+      max-violations: 1
+      punishment-commands:
+        - 'ban %player% perm &c[AC] Unfair Advantage'
+      j:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      k:
+        enabled: true
+        punishable: true
+        max-violations: 2
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      l:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      m:
+        enabled: true
+        punishable: true
+        max-violations: 4
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      n:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      o:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      p:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      q:
+        enabled: false
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      r:
+        enabled: false
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      s:
+        enabled: false
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      t:
+        enabled: false
+        punishable: false
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      u:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      v:
+        enabled: true
+        punishable: true
+        max-violations: 3
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      w:
+        enabled: true
+        punishable: false
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      x:
+        enabled: true
+        punishable: true
+        max-violations: 1
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      y:
+        enabled: true
+        punishable: true
+        max-violations: 5
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'
+      z:
+        enabled: true
+        punishable: true
+        max-violations: 4
+        punishment-commands:
+          - 'ban %player% perm &c[AC] Unfair Advantage'

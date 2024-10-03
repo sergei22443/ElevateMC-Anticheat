@@ -1,0 +1,17 @@
+name: Sosa
+version: ${project.version}
+main: com.elevatemc.anticheat.SosaPlugin
+authors: ["Saif", "Beanes"]
+description: Advanced Cheat Detection system for ElevateMC
+softdepend: [PacketEvents, ViaVersion, ProtocolLib]
+
+commands:
+  sosa:
+    description: Main command for Sosa.
+    usage: /<command>
+  forceban:
+    description: Ban someone using the AntiCheat
+    usage: /<command>
+  banwave:
+    description: banwave lmao
+    usage: /<command>
